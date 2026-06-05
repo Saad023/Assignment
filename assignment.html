@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card Section</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Arial,sans-serif;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(90deg,#8ed3e8,#8390e8);
+padding:40px;
+}
+.cards{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+justify-content:center;
+}
+.card{
+width:330px;
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+.content{padding:16px 18px 24px;}
+.tag{
+display:inline-block;
+padding:4px 10px;
+border-radius:20px;
+font-size:12px;
+color:#fff;
+margin-bottom:12px;
+}
+.blue{background:#5aa7ff}
+.orange{background:#f0b04f}
+.red{background:#e74c5b}
+h2{margin-bottom:10px}
+p{color:#555;line-height:1.5}
+.author{
+display:flex;
+align-items:center;
+gap:10px;
+margin-top:30px;
+}
+.avatar{
+width:40px;height:40px;border-radius:50%;
+background:#ddd;
+}
+.small{font-size:13px;color:#777}
+</style>
+</head>
+<body>
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800" alt="tech">
+<div class="content">
+<span class="tag blue">Technology</span>
+<h2>What's New In 2022 Tech</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<div class="author"><div class="avatar"></div><div><strong>Jane Doe</strong><div class="small">2h ago</div></div></div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800" alt="food">
+<div class="content">
+<span class="tag orange">Food</span>
+<h2>Delicious Food</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<div class="author"><div class="avatar"></div><div><strong>Jony Doe</strong><div class="small">Yesterday</div></div></div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800" alt="car">
+<div class="content">
+<span class="tag red">Automobile</span>
+<h2>Race To Your Heart Content</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<div class="author"><div class="avatar"></div><div><strong>John Doe</strong><div class="small">2d ago</div></div></div>
+</div>
+</div>
+</div>
+</body>
+</html>
